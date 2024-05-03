@@ -8,3 +8,139 @@ body {
 	background: rgb(42,37,37);
 	background: linear-gradient(360deg, rgba(42,37,37,1) 0%, rgba(80,64,64,1) 100%);
 }
+
+header {
+	height: 250px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inputContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.locationInput {
+	border: 1px solid white;
+	padding: 5px 10px;
+	box-shadow: none;
+	background-color: inherit;
+	color: white;
+	font-size: 25px;
+	outline: none;
+}
+
+.locationInput::placeholder {
+	color: white;
+	font-size: 25px;
+}
+
+.submitButton {
+	border: 1px solid white;
+	font-size: 25px;
+	padding: 5px 10px;
+	font-weight: bold;
+	background-color: inherit;
+	color: white;
+	transition: 1s;
+}
+
+.submitButton:hover {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.submitButton:active {
+	background-color: rgba(255, 255, 255, .6);
+	transition: 0s;
+}
+
+main {
+	height: calc(100% - 250px);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.weatherScreenContainer {
+	width: 600px;
+	height: 400px;
+	display: grid;
+	border: 1px solid white;
+	border-radius: 20px;
+}
+
+.locationContainer {
+	color: white;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 65px;
+	font-weight: bold;
+}
+
+.infoContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+}
+
+.weatherImage {
+	height: 64px;
+	width: 64px;
+}
+
+.leftSideContainer {
+	display: grid;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+}
+
+.rightSideContainer {
+	display: grid;
+	justify-content: right;
+	align-items: center;
+	padding: 20px;
+	align-content: center;
+}
+
+.temperature {
+	color: white;
+	font-size: 20px;
+}
+
+.hoursContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hours {
+	display: flex;
+	gap: 15px;
+	width: 100%;
+	height: 100%;
+	overflow-x: scroll;
+	color: white;
+	font-size: 20px;
+}
+
+.cell {
+	min-width: 100px;
+	min-height: 120px;
+	text-align: center;
+}
+
+.horlyImage {
+	width: 64px;
+	height: 64px;
+}
