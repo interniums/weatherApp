@@ -24,6 +24,10 @@ header {
 	gap: 20px;
 }
 
+.parent {
+	position: relative;
+}
+
 .locationInput {
 	border: 1px solid white;
 	padding: 5px 10px;
@@ -50,12 +54,13 @@ header {
 }
 
 .submitButton:hover {
-	background-color: rgba(255, 255, 255, .2);
+	background-color: rgba(255, 255, 255, .1);
 }
 
 .submitButton:active {
 	background-color: rgba(255, 255, 255, .6);
 	transition: 0s;
+	transform: scale(95%);
 }
 
 main {
@@ -112,6 +117,7 @@ main {
 .temperature {
 	color: white;
 	font-size: 20px;
+	text-align: center;
 }
 
 .hoursContainer {
@@ -143,4 +149,22 @@ main {
 .horlyImage {
 	width: 64px;
 	height: 64px;
+}
+
+.dropDownContainer {
+	width: 100%;
+	position: absolute;
+	background: linear-gradient(360deg, rgba(42,37,37,1) 0%, rgba(80,64,64,1) 100%);
+	left: 0;
+	top: 41px;
+	color: white;
+	font-size: 25px;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	display: grid;
+	gap: 10px;
+	z-index: 10;
+	padding: 5px 10px;
+	display: none;
 }
